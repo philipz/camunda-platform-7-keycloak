@@ -84,3 +84,7 @@ plugin.identity.keycloak:
   useGroupPathAsCamundaGroupId: true
   administratorGroupName: camunda-admin
   disableSSLCertificateValidation: true
+
+spring.data.redis:
+  host: redis-service
+  port: 6379

@@ -16,7 +16,7 @@
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 
-		<docker.imageName>gunnaraccso/camunda-showcase-keycloak:${version}</docker.imageName>
+		<docker.imageName>philipz/camunda-showcase-keycloak:${version}</docker.imageName>
 	</properties>
 
 	<dependencies>
@@ -86,6 +86,16 @@
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
+		</dependency>
+
+		<!-- Redis for session management -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
 		</dependency>
 
 		<!-- Test dependencies -->

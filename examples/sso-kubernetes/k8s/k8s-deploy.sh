@@ -10,6 +10,12 @@ kubectl apply -f ./deployment.yaml
 kubectl apply -f ./service.yaml
 cd ..
 
+# startup redis
+cd ./redis
+kubectl apply -f ./deployment.yaml
+kubectl apply -f ./service.yaml
+cd ..
+
 # startup the sample
 kubectl apply -f ./deployment.yaml
 kubectl apply -f ./service.yaml

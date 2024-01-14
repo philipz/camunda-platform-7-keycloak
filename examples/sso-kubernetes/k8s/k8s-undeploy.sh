@@ -11,6 +11,12 @@ kubectl delete -f ./service.yaml
 kubectl delete -f ./endpoint.yaml 
 cd ..
 
+# delete redis
+cd ./redis
+kubectl delete -f ./deployment.yaml
+kubectl delete -f ./service.yaml
+cd ..
+
 # delete keycloak
 cd ./keycloak
 kubectl delete -f ./deployment.yaml
