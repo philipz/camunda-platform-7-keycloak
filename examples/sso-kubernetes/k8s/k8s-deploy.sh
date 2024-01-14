@@ -10,12 +10,6 @@ kubectl apply -f ./deployment.yaml
 kubectl apply -f ./service.yaml
 cd ..
 
-# provide localhost access
-cd ./localhost
-kubectl apply -f ./service.yaml
-kubectl apply -f ./endpoint.yaml 
-cd ..
-
 # startup the sample
 kubectl apply -f ./deployment.yaml
 kubectl apply -f ./service.yaml

@@ -31,7 +31,7 @@ spec:
            - name: JDBC_PASSWORD
              value: camunda1!
            - name: KEYCLOAK_URL_AUTH
-             value: http://armstrong02/auth
+             value: http://keycloak/auth
            - name: KEYCLOAK_URL_TOKEN
              value: http://keycloak-server-service:8080/auth
            - name: KEYCLOAK_URL_PLUGIN

@@ -13,21 +13,20 @@ metadata:
 
 spec:
   rules:
-  - host: armstrong02
-    http:
+  - http:
       paths:
         - path: /(camunda)(.*)(/|$)
-          pathType: Prefix
+          pathType: ImplementationSpecific
           backend:
             service:
               name: keycloak-showcase-service
               port:
                 number: 8080
         - path: /(auth)(.*)(/|$)
-          pathType: Prefix
+          pathType: ImplementationSpecific
           backend:
             service:
-              name: keycloak-server-service
+              name: keycloak
               port:
                 number: 8080
   ingressClassName: nginx
